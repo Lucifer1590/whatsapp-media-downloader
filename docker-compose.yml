@@ -1,7 +1,7 @@
 version: '3'
 services:
   wadownload:
-    image: whatsapp-media-downloader:master
+    image: ghcr.io/lucifer1590/whatsapp-media-downloader:master
     container_name: whatsapp-media-downloader
     volumes:
       - ./media:/home/node/app/media  # Replace the host directory path with the desired media files location
