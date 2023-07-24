@@ -26,7 +26,7 @@ client.on('message', async (msg) => {
         .split(' ')[1]
         .replace(/:/g, '-');
 
-    const date = new Date(msg.timestamp * 1000).toISOString().substring(0, 10);
+    const date = new Date(msg.timestamp * 1000 + 30 * 60000 + 15 * 1000).toISOString().substring(0, 19);
     const person = msg._data.notifyName;
     const phoneNumber = msg.from.replace('@c.us', '');
     const folder = path.join(process.cwd(), 'media');
