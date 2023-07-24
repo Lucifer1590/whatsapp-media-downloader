@@ -50,7 +50,7 @@ client.on('message', async (msg) => {
                 filename = path.join(folder, filenameWithoutExtension + '.xlsx');
             } else if (media.mimetype === 'application/vnd.openxmlformats-officedocument.presentationml.presentation') {
                 filename = path.join(folder, filenameWithoutExtension + '.xls');    
-            } else if (media.mimetype === 'application/vnd.ms-excel') {
+            } else if (media.mimetype === 'application/vnd.openxmlformats-officedocument.wordprocessingml.document') {
                 filename = path.join(folder, filenameWithoutExtension + '.docx');
             } else if (media.mimetype === 'application/msword') {
                 filename = path.join(folder, filenameWithoutExtension + '.doc');
