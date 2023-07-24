@@ -1,8 +1,8 @@
 version: '3'
 services:
   wadownload:
-    image: whatnano
-    container_name: whatnano
+    image: whatsapp-media-downloader:master
+    container_name: whatsapp-media-downloader
     volumes:
       - ./media:/home/node/app/media  # Replace the host directory path with the desired media files location
       - ./session:/home/node/app/session  # Replace the host directory path with the desired session location
